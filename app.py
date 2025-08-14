@@ -6,7 +6,7 @@ load_dotenv()
 def random_number_generator():
     secret = os.getenv('SUPER_SECRET_PHRASE')
     if secret == '1up':
-        print(np.random.randint(1, 101))
+        print(np.random.randint(1, 101) * 7139)
     else:
         print("Access denied: invalid or missing secret phrase.")
 
